@@ -1,66 +1,44 @@
-## Foundry
+# Foundry NFT
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A Foundry project with two ERC-721 collections:
 
-Foundry consists of:
+- `BasicNft` stores the metadata URI provided when an NFT is minted.
+- `MoodNft` serves on-chain JSON metadata with a happy or sad SVG image.
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Requirements
 
-## Documentation
+- [Foundry](https://book.getfoundry.sh/getting-started/installation)
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
+## Build, test, and format
 
 ```shell
-$ forge build
+forge build
+forge test
+forge fmt
 ```
 
-### Test
+## Deploy
+
+Deploy `BasicNft` with:
 
 ```shell
-$ forge test
+forge script script/DeployBasicNft.s.sol:DeployBasicNft --rpc-url <rpc-url> --broadcast
 ```
 
-### Format
+Deploy `MoodNft` with:
 
 ```shell
-$ forge fmt
+forge script script/DeployMoodNft.s.sol:DeployMoodNft --rpc-url <rpc-url> --broadcast
 ```
 
-### Gas Snapshots
+The mood NFT deployment script reads `img/sad.svg` and `img/happy.svg`.
 
-```shell
-$ forge snapshot
-```
+## Acknowledgements
 
-### Anvil
+Built following the [Cyfrin Updraft](https://updraft.cyfrin.io/) Foundry DeFi course by Patrick Collins.
 
-```shell
-$ anvil
-```
+---
 
-### Deploy
+## License
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+[MIT](https://opensource.org/licenses/MIT)
