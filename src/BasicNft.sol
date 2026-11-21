@@ -25,6 +25,8 @@ contract BasicNft is ERC721 {
 
     /// @notice Returns the metadata URI for a minted token.
     /// @dev Reverts if `tokenId` does not exist.
+    /// @param tokenId The ID of the token to query.
+    /// @return The metadata URI associated with the token.
     function tokenURI(uint256 tokenId) public view override returns (string memory) {
         _requireOwned(tokenId);
         return s_tokenIdToUri[tokenId];

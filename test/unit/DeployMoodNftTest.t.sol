@@ -5,6 +5,8 @@ pragma solidity ^0.8.19;
 import {Test, console} from "forge-std/Test.sol";
 import {DeployMoodNft} from "../../script/DeployMoodNft.s.sol";
 
+/// @title DeployMoodNftTest
+/// @notice Tests converting SVG markup into a Base64 image data URI.
 contract DeployMoodNftTest is Test {
     DeployMoodNft public deployer;
 

@@ -5,6 +5,8 @@ pragma solidity ^0.8.19;
 import {Test, console} from "forge-std/Test.sol";
 import {MoodNft} from "../../src/MoodNft.sol";
 
+/// @title MoodNftTest
+/// @notice Exercises MoodNft token metadata generation.
 contract MoodNftTest is Test {
     MoodNft moodNft;
     string public constant HAPPY_SVG_IMAGE_URI =

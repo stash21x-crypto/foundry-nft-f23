@@ -6,6 +6,8 @@ import {Test, console} from "forge-std/Test.sol";
 import {MoodNft} from "../../src/MoodNft.sol";
 import {DeployMoodNft} from "../../script/DeployMoodNft.s.sol";
 
+/// @title MoodNftIntegrationTest
+/// @notice Tests MoodNft deployment, URI generation, and mood changes with the project SVG assets.
 contract MoodNftIntegrationTest is Test {
     MoodNft moodNft;
     string public constant HAPPY_SVG_IMAGE_URI =
