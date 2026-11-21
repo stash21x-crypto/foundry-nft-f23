@@ -1,7 +1,6 @@
 # Foundry NFT
 
 ![Smart Contract Development](https://img.shields.io/badge/Focus-Smart%20Contract%20Security-blue)
-![Platform](https://img.shields.io/badge/Platform-Updraft-purple)
 ![Education](https://img.shields.io/badge/Learning-Cyfrin%20Updraft-orange)
 ![License](https://img.shields.io/badge/License-MIT%20License-lightgrey)
 
