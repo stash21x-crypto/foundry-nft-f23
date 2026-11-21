@@ -2,7 +2,7 @@
 
 ![Smart Contract Development](https://img.shields.io/badge/Focus-Smart%20Contract%20Development-blue)
 ![Education](https://img.shields.io/badge/Learning-Cyfrin%20Updraft-orange)
-![License](https://img.shields.io/badge/License-MIT%20License-pink)
+![License](https://img.shields.io/badge/License-MIT%20License-yellow)
 
 A Foundry project with two ERC-721 collections:
 
